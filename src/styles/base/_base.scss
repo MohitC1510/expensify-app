@@ -1,0 +1,17 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: $m-size;
+    font-family: 'Nothing You Could Do', cursive;
+    }
+button{
+    cursor: pointer;
+}
+button:disabled{
+    cursor: default;
+}
+.isActive{
+    font-weight: bolder;
+    color: #764abc;
+}
