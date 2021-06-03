@@ -12,8 +12,11 @@ const config = {
   };
   firebase.initializeApp(config);
   const database=firebase.database();
+  
+  const googleAuthProvider= new firebase.auth.GoogleAuthProvider();
+  googleAuthProvider.setCustomParameters({ 'prompt': 'select_account' });
 
-  export { firebase, database as default} ;
+  export { firebase,googleAuthProvider , database as default} ;
 
 // //   child_removed
 // //    database.ref('Expenses').on('child_removed', (snapshot)=>[
